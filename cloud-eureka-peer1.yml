@@ -8,8 +8,8 @@ eureka:
   client:
     register-with-eureka: false #是否将自己注册到Eureka Server
     fetch-registry: false #是否从Eureka拉去注册信息
-    #serviceUrl:
-     # defaultZone: http://${EUREKA_ADDRESS:peer1}:${server.port}/eureka
+    serviceUrl:
+      defaultZone: http://127.0.0.1:${server.port}/eureka
   server:
     enable-self-preservation: false
     response-cache-update-interval-ms: 3000 #api缓存时间
